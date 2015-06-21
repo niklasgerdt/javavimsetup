@@ -1,5 +1,8 @@
 "~/.vim/ftplugin/java.vim
+
 "
+let mapleader = "\<SPACE>"
+
 "project view
 nnoremap <buffer> <leader>p :ProjectsTree<cr>
 "format
@@ -30,3 +33,8 @@ nnoremap <buffer> <leader>U :JUnit *
 "splitted window to new tab <C-W><S-T>
 "directory e.
 "
+noremap <silent> <buffer> <leader>e :browse oldfiles<cr>
+set switchbuf+=newtab
+
+noremap <silent> <buffer> <leader>w :q<cr>
+noremap <silent> <buffer> <leader>b :e #<cr>
