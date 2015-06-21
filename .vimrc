@@ -40,3 +40,6 @@ let g:EclimCompletionMethod = 'omnifunc'
 let mapleader = "\<SPACE>"
 noremap <silent> <buffer> <leader>e :browse oldfiles<cr>
 set switchbuf+=newtab
+
+noremap <silent> <buffer> <leader>w :q<cr>
+noremap <silent> <buffer> <leader>b :e #<cr>
